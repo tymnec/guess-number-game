@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Guess Number Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-blue-100 p-10 m-10">
+    <div class="text-7xl">
+        <div
+            class="justify-center mx-10 my-10 bg-gradient-to-br from-red-300 to-red-400 text-center rounded-3xl drop-shadow-lg hover:drop-shadow-2xl px-2 py-5 text-white transition duration-1000 ease-in-out select-none font-light">
+            Guess Number Game</div>
+    </div>
+    <div class="bg-blue-300 px-32 py-20 pb-32 rounded-3xl shadow-2xl shadow-red-300 hover:shadow-blue-300 transition duration-700 ease-in-out">
+        <div class="">
+            <div class="text-3xl text-center place-items-center">
+                <h1 class="bg-red-100 hover:bg-blue-100 p-10 rounded-3xl shadow-2xl hover:shadow-blue-500 transition duration-700 ease-in-out select-none text-red-900 hover:text-blue-900">Guess a number between 1 and 100</h1>
+            </div>
+            <br>
+            <br>
+            <input type="number" id="guess" class="transition duration-1000 ease-in-out rounded-3xl mx-10 my-10 p-5 text-5xl hover:drop-shadow-2xl hover:scale-150" placeholder="Enter your guess">
+            <button onclick="checkGuess()" class="text-5xl ml-56 bg-white px-10 py-3 rounded-3xl transition duration-700 ease-in-out hover:scale-125 hover:shadow-lg hover:shadow-white font-bold">Submit</button>
+            <br>
+            <br>
+            <p class="text-5xl text-white hover:scale-125 transition duration-700 ease-in-out" id="message"></p>
+            <br>
+            <p class="text-5xl text-white hover:scale-125 transition duration-700 ease-in-out" id="tries"></p>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
